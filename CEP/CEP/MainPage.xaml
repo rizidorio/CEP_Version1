@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CEP"
+             x:Class="CEP.MainPage">
+
+    <StackLayout BackgroundColor="White" Padding="30" Spacing="30" >
+        <Image x:Name="Logo" 
+               Source="correios.ong" />
+        
+        <Entry x:Name="txtCep" 
+               TextColor="#ffbf00"
+               Placeholder="Digite o CEP"
+               PlaceholderColor="#ffbf00"
+               Keyboard="Numeric"
+               BackgroundColor="White" />
+        
+        <Button x:Name="btnBuscarCep"
+                Text="Buscar CEP"
+                TextColor="White"
+                BackgroundColor="#00416b" />
+        
+        <StackLayout BackgroundColor="White" Padding="10">
+            <Label x:Name="lblCep"
+                   TextColor="Black"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   FontFamily="Arial" 
+                   LineBreakMode="WordWrap" />
+            
+            <Label x:Name="lblLogradouro"
+                   TextColor="Black"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   FontFamily="Arial"
+                   LineBreakMode="WordWrap" />
+            
+            <Label x:Name="lblBairro"
+                   TextColor="Black"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   FontFamily="Arial"
+                   LineBreakMode="WordWrap" />
+
+            <Label x:Name="lblCidade"
+                   TextColor="Black"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   FontFamily="Arial"
+                   LineBreakMode="WordWrap" />
+
+            <Label x:Name="lblEstado"
+                   TextColor="Black"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   FontFamily="Arial"
+                   LineBreakMode="WordWrap" />
+            
+        </StackLayout>
+        
+    </StackLayout>
+
+</ContentPage>
